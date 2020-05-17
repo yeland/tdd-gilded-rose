@@ -20,4 +20,12 @@ public class NormalGoodsTest {
         assertEquals(-1, normalGoods.getSellIn());
         assertEquals(18, normalGoods.getQuantity());
     }
+
+    @Test
+    void should_get_sellIn_is_n2_quantity_is_18_when_pass_one_day_given_a_normal_goods_with_sellIn_is_n1_quantity_is_20() {
+        NormalGoods normalGoods = new NormalGoods(-1, 20);
+        normalGoods.passOneDay();
+        assertEquals(-2, normalGoods.getSellIn());
+        assertEquals(18, normalGoods.getQuantity());
+    }
 }
