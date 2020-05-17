@@ -23,5 +23,6 @@ public class AgedBrie {
         if (sellIn <= 0) {
             quantity ++;
         }
+        quantity = Math.min(50, quantity);
     }
 }

@@ -28,4 +28,12 @@ public class AgedBrieTest {
         assertEquals(-2, agedBrie.getSellIn());
         assertEquals(22, agedBrie.getQuantity());
     }
+
+    @Test
+    void should_get_sellIn_is_9_quantity_is_50_when_pass_one_day_given_a_Aged_Brie_with_sellIn_is_10_quantity_is_50() {
+        AgedBrie agedBrie = new AgedBrie(10, 50);
+        agedBrie.passOneDay();
+        assertEquals(9, agedBrie.getSellIn());
+        assertEquals(50, agedBrie.getQuantity());
+    }
 }
