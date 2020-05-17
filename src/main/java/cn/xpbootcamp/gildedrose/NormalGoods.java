@@ -24,5 +24,6 @@ public class NormalGoods {
         if (sellIn <= 0) {
             quantity --;
         }
+        quantity = Math.max(0, quantity);
     }
 }
