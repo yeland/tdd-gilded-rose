@@ -28,4 +28,12 @@ public class BackstagePassTest {
         assertEquals(9, backstagePass.getSellIn());
         assertEquals(50, backstagePass.getQuantity());
     }
+
+    @Test
+    void should_get_sellIn_is_8_quantity_is_22_when_pass_one_day_given_a_Backstage_pass_with_sellIn_is_9_quantity_is_20() {
+        BackstagePass backstagePass = new BackstagePass(9, 20);
+        backstagePass.passOneDay();
+        assertEquals(8, backstagePass.getSellIn());
+        assertEquals(22, backstagePass.getQuantity());
+    }
 }
