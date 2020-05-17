@@ -20,5 +20,8 @@ public class AgedBrie {
     public void passOneDay() {
         sellIn --;
         quantity ++;
+        if (sellIn <= 0) {
+            quantity ++;
+        }
     }
 }
