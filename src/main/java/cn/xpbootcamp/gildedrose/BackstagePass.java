@@ -23,6 +23,9 @@ public class BackstagePass {
         if (sellIn <= 10) {
             quantity ++;
         }
+        if (sellIn < 5) {
+            quantity ++;
+        }
         quantity = Math.min(50, quantity);
     }
 }
