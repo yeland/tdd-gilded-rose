@@ -21,7 +21,7 @@ public class NormalGoods {
     public void passOneDay() {
         sellIn --;
         quantity --;
-        if (sellIn <= 0) {
+        if (sellIn < 0) {
             quantity --;
         }
         quantity = Math.max(0, quantity);

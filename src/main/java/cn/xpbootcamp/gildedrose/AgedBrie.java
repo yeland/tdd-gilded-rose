@@ -20,7 +20,7 @@ public class AgedBrie {
     public void passOneDay() {
         sellIn --;
         quantity ++;
-        if (sellIn <= 0) {
+        if (sellIn < 0) {
             quantity ++;
         }
         quantity = Math.min(50, quantity);

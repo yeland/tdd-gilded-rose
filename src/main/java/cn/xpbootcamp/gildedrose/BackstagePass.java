@@ -20,7 +20,7 @@ public class BackstagePass {
     public void passOneDay() {
         sellIn --;
         quantity ++;
-        if (sellIn <= 10) {
+        if (sellIn < 10) {
             quantity ++;
         }
         if (sellIn < 5) {
