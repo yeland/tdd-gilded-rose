@@ -21,5 +21,8 @@ public class NormalGoods {
     public void passOneDay() {
         sellIn --;
         quantity --;
+        if (sellIn <= 0) {
+            quantity --;
+        }
     }
 }
